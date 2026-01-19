@@ -48,22 +48,7 @@
 
         <div class="klinks" aria-label="Key links">
           <a class="pill" href="https://scholar.google.com/citations?user=s2j0rFoAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="pill" 
-            <script>
-              (function(){
-                const user = "WXin";
-                const domain = "imf.org";
-                const addr = `${user}@${domain}`;
-                const el = document.getElementById('email');
-                if(!el) return;
-                el.innerHTML = '';
-                const a = document.createElement('a');
-                a.href = `mailto:${addr}`;
-                a.textContent = `${user}[at]${domain.replace('.', '[dot]')}`;
-                el.appendChild(a);
-              })();
-            </script>
-          >Email</a>
+          <a class="pill" href="#contact">Email</a>
           <!-- <a class="pill" href="#cv">CV</a> -->
         </div>
 
@@ -198,34 +183,33 @@
       </p>
     </section>
     -->
-
-    <!--
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Email: <span id="email">WXin[at]imf[dot]org</span>
-      </p>
-      <p>
-        Google Scholar: <a href="https://scholar.google.com/citations?user=qoM5CkcAAAAJ&hl=en" target="_blank" rel="noopener">scholar.google.com</a>
-      </p>
-
-      <!-- Optional: make the email clickable without exposing it directly in the HTML source -->
-      <script>
-        (function(){
-          const user = "WXin";
-          const domain = "imf.org";
-          const addr = `${user}@${domain}`;
-          const el = document.getElementById('email');
-          if(!el) return;
-          el.innerHTML = '';
-          const a = document.createElement('a');
-          a.href = `mailto:${addr}`;
-          a.textContent = `${user}[at]${domain.replace('.', '[dot]')}`;
-          el.appendChild(a);
-        })();
-      </script>
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Email: <span id="email">WXin[at]imf[dot]org</span>
+        </p>
+        <p>
+          Google Scholar: <a href="https://scholar.google.com/citations?user=s2j0rFoAAAAJ&hl=en" target="_blank" rel="noopener">scholar.google.com</a>
+        </p>
+  
+        <!-- Optional: make the email clickable without exposing it directly in the HTML source -->
+        <script>
+          (function(){
+            const user = "WXin";
+            const domain = "imf.org";
+            const addr = `${user}@${domain}`;
+            const el = document.getElementById('email');
+            if(!el) return;
+            el.innerHTML = '';
+            const a = document.createElement('a');
+            a.href = `mailto:${addr}`;
+            a.textContent = `${user}[at]${domain.replace('.', '[dot]')}`;
+            el.appendChild(a);
+          })();
+        </script>
+      </div>
     </section>
-    -->
     
     <footer>
       <div>Last updated: January 2026</div>

@@ -362,6 +362,73 @@ section {
     color: var(--white);
 }
 
+/* Title row + “More” bubble */
+.paper-title-row{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:0.75rem;
+  flex-wrap:wrap;
+  margin-bottom:0.75rem;
+}
+
+/* Override the default h4 bottom margin inside the row */
+.paper-title-row h4{ margin:0; }
+
+/* Details toggler */
+.paper-more{ margin:0; }
+
+.paper-more > summary{
+  list-style:none;
+  cursor:pointer;
+  user-select:none;
+  display:inline-flex;
+  align-items:center;
+}
+
+/* Hide default marker/triangle */
+.paper-more > summary::-webkit-details-marker{ display:none; }
+
+/* Bubble button */
+.more-bubble{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0.22rem 0.7rem;
+  border-radius:999px;
+  border:2px solid var(--accent-color);
+  color:var(--accent-color);
+  background:transparent;
+  font-weight:700;
+  font-size:0.85rem;
+  line-height:1.2;
+  transition:all 0.2s ease;
+}
+
+.paper-more > summary:hover .more-bubble,
+.paper-more[open] > summary .more-bubble{
+  background:var(--accent-color);
+  color:var(--white);
+}
+
+/* Abstract panel inside details (matches your aesthetic) */
+.paper-more .paper-abstract{
+  margin:0.9rem 0 0;
+  padding:1rem 1.25rem;
+  background:var(--light-gray);
+  border-radius:10px;
+  border-left:4px solid var(--accent-color);
+}
+
+.paper-more .paper-abstract p{ margin:0; }
+
+/* Small open animation */
+.paper-more[open] .paper-abstract{ animation:paperFadeIn 160ms ease-out; }
+@keyframes paperFadeIn{
+  from{ opacity:0; transform:translateY(-2px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+
 /* Teaching */
 .teaching-experience ul {
     list-style: none;

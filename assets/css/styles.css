@@ -375,7 +375,29 @@ section {
 /* Override the default h4 bottom margin inside the row */
 .paper-title-row h4{ margin:0; }
 
-.paper-title-row > p.meta{ flex: 0 0 100% !important; margin:0.25rem 0 0 !important; }
+/* Title row should not be a horizontal flex row */
+.paper-title-row { display: block; }
+
+/* Meta + Abstract bubble on the same line */
+.meta-row{
+  display:flex;
+  align-items:baseline;
+  gap:0.6rem;
+  flex-wrap:wrap;
+}
+
+.meta-row .meta{
+  margin:0;            /* remove default <p> spacing */
+  flex: 1 1 auto;      /* let the meta take the line */
+  min-width: 280px;
+}
+
+/* Keep the bubble inline; when opened, abstract drops below */
+.paper-more-inline{ margin:0; }
+.paper-more-inline > summary{ list-style:none; cursor:pointer; user-select:none; display:inline-flex; align-items:center; }
+.paper-more-inline > summary::-webkit-details-marker{ display:none; }
+
+.paper-more-inline[open]{ flex-basis:100%; }  /* forces abstract to next line */
 
 /* Details toggler */
 .paper-more{ margin:0; }

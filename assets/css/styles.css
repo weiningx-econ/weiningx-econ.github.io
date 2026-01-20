@@ -375,10 +375,7 @@ section {
 /* Override the default h4 bottom margin inside the row */
 .paper-title-row h4{ margin:0; }
 
-.paper-title-row .meta{
-  flex-basis: 100%;   /* always start on a new line */
-  margin: 0.2rem 0 0; /* optional: tighten spacing */
-}
+.paper-title-row > p.meta{ flex: 0 0 100% !important; margin:0.25rem 0 0 !important; }
 
 /* Details toggler */
 .paper-more{ margin:0; }

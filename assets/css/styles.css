@@ -383,24 +383,20 @@ section {
   display:flex;
   align-items:baseline;
   gap:0.6rem;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
 }
 
 .meta-row .meta{
   margin:0;            /* remove default <p> spacing */
   flex: 1 1 auto;      /* let the meta take the line */
-  min-width: 280px;
+  min-width: 0;
 }
 
-/* Keep the bubble inline; when opened, abstract drops below */
-.paper-more-inline{ margin:0; }
-.paper-more-inline > summary{ list-style:none; cursor:pointer; user-select:none; display:inline-flex; align-items:center; }
-.paper-more-inline > summary::-webkit-details-marker{ display:none; }
-
-.paper-more-inline[open]{ flex-basis:100%; }  /* forces abstract to next line */
-
 /* Details toggler */
-.paper-more{ margin:0; }
+.paper-more{
+    flex:0 0 auto;
+    margin-left:auto;        /* right align */
+}
 
 .paper-more > summary{
   list-style:none;

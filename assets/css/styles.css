@@ -15,33 +15,9 @@
 
   --wrap: 1080px;
   --gutter: 24px;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #11161b;
-    --surface: #182027;
-    --ink: #eef1f3;
-    --ink-2: #c3cad0;
-    --ink-3: #8f99a2;
-    --rule: #2a343d;
-    --accent: #e8909e;
-    --accent-soft: #2e1c22;
-    --bar: #6cc3a8;
-    --bar-muted: #3d6f61;
-    --fig-bg: #ffffff;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #11161b;
-  --surface: #182027;
-  --ink: #eef1f3;
-  --ink-2: #c3cad0;
-  --ink-3: #8f99a2;
-  --rule: #2a343d;
-  --accent: #e8909e;
-  --accent-soft: #2e1c22;
-  --fig-bg: #ffffff;
+  /* Light theme only; also opts out of browser auto-darkening */
+  color-scheme: only light;
 }
 
 /* ---------- Base ---------- */
@@ -110,12 +86,8 @@ nav a:hover { color: var(--ink); text-decoration: none; }
   font-size: 14px; font-weight: 600; border-radius: 4px;
   background: var(--accent); color: #fff; border: 1px solid var(--accent);
 }
-:root[data-theme="dark"] .btn { color: #140c0f; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn { color: #140c0f; } }
 .btn:hover { text-decoration: none; filter: brightness(1.08); }
 .btn-ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
-:root[data-theme="dark"] .btn-ghost { color: var(--ink); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn-ghost { color: var(--ink); } }
 .btn-ghost:hover { border-color: var(--ink-3); filter: none; }
 
 /* ---------- Proof strip ---------- */
@@ -150,8 +122,6 @@ nav a:hover { color: var(--ink); text-decoration: none; }
   font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
   background: var(--accent); color: #fff; padding: 3px 8px; border-radius: 3px;
 }
-:root[data-theme="dark"] .badge { color: #140c0f; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge { color: #140c0f; } }
 .featured h3 { font-size: clamp(24px, 3vw, 30px); line-height: 1.2; letter-spacing: -0.01em; margin-bottom: 10px; }
 .featured h3 a { color: var(--ink); }
 .featured .authors { margin-bottom: 16px; }

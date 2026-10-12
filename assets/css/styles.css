@@ -6,8 +6,8 @@
   --ink-2: #44505c;
   --ink-3: #6b7580;
   --rule: #e4e1da;
-  --accent: #1d4f91;       /* deep blue, echoes the portrait backdrop */
-  --accent-soft: #e8eef8;
+  --accent: #a8485a;       /* softened burgundy, echoes the tie in the portrait */
+  --accent-soft: #f7eaec;
   --fig-bg: #ffffff;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -25,8 +25,8 @@
     --ink-2: #c3cad0;
     --ink-3: #8f99a2;
     --rule: #2a343d;
-    --accent: #8ab4ec;
-    --accent-soft: #1a2638;
+    --accent: #e8909e;
+    --accent-soft: #2e1c22;
     --bar: #6cc3a8;
     --bar-muted: #3d6f61;
     --fig-bg: #ffffff;
@@ -39,8 +39,8 @@
   --ink-2: #c3cad0;
   --ink-3: #8f99a2;
   --rule: #2a343d;
-  --accent: #8ab4ec;
-  --accent-soft: #1a2638;
+  --accent: #e8909e;
+  --accent-soft: #2e1c22;
   --fig-bg: #ffffff;
 }
 
@@ -110,8 +110,8 @@ nav a:hover { color: var(--ink); text-decoration: none; }
   font-size: 14px; font-weight: 600; border-radius: 4px;
   background: var(--accent); color: #fff; border: 1px solid var(--accent);
 }
-:root[data-theme="dark"] .btn { color: #0c1626; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn { color: #0c1626; } }
+:root[data-theme="dark"] .btn { color: #140c0f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn { color: #140c0f; } }
 .btn:hover { text-decoration: none; filter: brightness(1.08); }
 .btn-ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
 :root[data-theme="dark"] .btn-ghost { color: var(--ink); }
@@ -150,8 +150,8 @@ nav a:hover { color: var(--ink); text-decoration: none; }
   font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
   background: var(--accent); color: #fff; padding: 3px 8px; border-radius: 3px;
 }
-:root[data-theme="dark"] .badge { color: #0c1626; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge { color: #0c1626; } }
+:root[data-theme="dark"] .badge { color: #140c0f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge { color: #140c0f; } }
 .featured h3 { font-size: clamp(24px, 3vw, 30px); line-height: 1.2; letter-spacing: -0.01em; margin-bottom: 10px; }
 .featured h3 a { color: var(--ink); }
 .featured .authors { margin-bottom: 16px; }

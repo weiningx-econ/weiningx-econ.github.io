@@ -149,7 +149,8 @@ nav a:hover { color: var(--ink); text-decoration: none; }
   align-items: start;
 }
 .paper:last-child { border-bottom: 0; }
-.paper.paper-wide { grid-template-columns: 1fr; }
+.paper.paper-wide { grid-template-columns: 1fr; padding: 18px 0; }
+.paper.paper-wide .abstract { margin-top: 6px; }
 /* Briefly highlight the paper a research-focus tag jumps to */
 .paper:target { animation: paper-flash 2.4s ease-out; }
 @keyframes paper-flash {

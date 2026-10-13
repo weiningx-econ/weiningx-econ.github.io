@@ -251,5 +251,6 @@ nav a:hover { color: var(--ink); text-decoration: none; }
   .paper { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
   .paper-fig { aspect-ratio: 16 / 10; }
   .paper .paper-side { display: flex; align-items: baseline; gap: 10px; }
+  .paper .paper-side:empty { display: none; }
   .footer-inner { grid-template-columns: 1fr; gap: 24px; }
 }

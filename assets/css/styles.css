@@ -221,6 +221,7 @@ nav a:hover { color: var(--ink); text-decoration: none; }
 .policy-list .title { font-family: var(--serif); font-size: 17px; font-weight: 600; line-height: 1.35; color: var(--ink); }
 .policy-list a.title:hover { color: var(--accent); text-decoration: none; }
 .policy-list .venue { font-size: 14px; }
+.policy-list .authors { margin-top: 4px; }
 .policy-list .countries { font-size: 15px; color: var(--ink-2); margin-top: 4px; }
 
 /* ---------- Footer ---------- */

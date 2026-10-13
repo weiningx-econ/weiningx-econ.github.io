@@ -22,7 +22,7 @@
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 72px; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--bg);
@@ -71,12 +71,17 @@ nav a:hover { color: var(--ink); text-decoration: none; }
 .lede { font-family: var(--serif); font-size: clamp(20px, 2.4vw, 24px); line-height: 1.4; color: var(--ink); max-width: 34em; margin-bottom: 16px; }
 .hero-sub { color: var(--ink-2); max-width: 38em; margin-bottom: 22px; }
 .focus { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-wrap: wrap; gap: 8px; }
-.focus li {
+.focus a {
+  display: inline-block;
   font-size: 13px; font-weight: 500; color: var(--ink-2);
   border: 1px solid var(--rule); background: var(--surface);
   padding: 4px 12px; border-radius: 999px;
+  transition: color .15s, border-color .15s, background .15s;
 }
-.focus li:nth-child(-n+2) { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 35%, transparent); background: var(--accent-soft); }
+.focus a:hover, .focus a:focus-visible {
+  text-decoration: none; color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 35%, transparent); background: var(--accent-soft);
+}
 .hero-links { display: flex; flex-wrap: wrap; gap: 10px; }
 .hero-photo { margin: 0; }
 .hero-photo img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 4px; }
@@ -144,6 +149,13 @@ nav a:hover { color: var(--ink); text-decoration: none; }
   align-items: start;
 }
 .paper:last-child { border-bottom: 0; }
+/* Briefly highlight the paper a research-focus tag jumps to */
+.paper:target { animation: paper-flash 2.4s ease-out; }
+@keyframes paper-flash {
+  0%, 35% { background: var(--accent-soft); box-shadow: 0 0 0 16px var(--accent-soft); }
+  100% { background: transparent; box-shadow: 0 0 0 16px transparent; }
+}
+@media (prefers-reduced-motion: reduce) { .paper:target { animation: none; } }
 .subhead { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin: 36px 0 0; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
 .paper-fig {
   display: block;

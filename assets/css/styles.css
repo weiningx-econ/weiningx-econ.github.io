@@ -216,12 +216,12 @@ nav a:hover { color: var(--ink); text-decoration: none; }
 
 /* ---------- Policy list ---------- */
 .policy-list { list-style: none; margin: 0; padding: 0; }
-.policy-list li { display: grid; grid-template-columns: 300px 1fr; gap: 36px; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+.policy-list li { padding: 14px 0; border-bottom: 1px solid var(--rule); }
 .policy-list li:last-child { border-bottom: 0; }
-.policy-list .paper-kind { margin-top: 3px; }
 .policy-list .title { font-family: var(--serif); font-size: 17px; font-weight: 600; line-height: 1.35; color: var(--ink); }
 .policy-list a.title:hover { color: var(--accent); text-decoration: none; }
 .policy-list .venue { font-size: 14px; }
+.policy-list .countries { font-size: 15px; color: var(--ink-2); margin-top: 4px; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--surface); border-top: 1px solid var(--rule); padding: 56px 0 24px; }
@@ -238,7 +238,6 @@ nav a:hover { color: var(--ink); text-decoration: none; }
   .featured { grid-template-columns: 1fr; grid-template-areas: "body" "side"; gap: 28px; padding: 28px; }
   .proof-inner { grid-template-columns: 1fr; gap: 14px; }
   .paper { grid-template-columns: 220px 1fr; gap: 24px; }
-  .policy-list li { grid-template-columns: 220px 1fr; gap: 24px; }
 }
 @media (max-width: 640px) {
   :root { --gutter: 16px; }
@@ -249,7 +248,6 @@ nav a:hover { color: var(--ink); text-decoration: none; }
   .stats { grid-template-columns: 1fr; gap: 16px; }
   .stats dt { font-size: 24px; margin-bottom: 4px; }
   .paper { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
-  .policy-list li { grid-template-columns: 1fr; gap: 4px; }
   .paper-fig { aspect-ratio: 16 / 10; }
   .paper .paper-side { display: flex; align-items: baseline; gap: 10px; }
   .footer-inner { grid-template-columns: 1fr; gap: 24px; }

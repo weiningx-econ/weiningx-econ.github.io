@@ -198,7 +198,7 @@ nav a:hover { color: var(--ink); text-decoration: none; }
 }
 .abstract summary::-webkit-details-marker { display: none; }
 .abstract summary::before { content: "+"; display: inline-block; width: 1em; text-align: center; }
-.abstract[open] summary::before { content: "2"; }
+.abstract[open] summary::before { content: "\2212"; }
 .abstract p {
   font-size: 14px; line-height: 1.65; color: var(--ink-2);
   margin-top: 10px; padding-left: 12px; border-left: 2px solid var(--rule);

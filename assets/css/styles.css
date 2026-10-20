@@ -183,7 +183,7 @@ nav a:hover { color: var(--ink); text-decoration: none; }
 .paper h3 a:hover { color: var(--accent); text-decoration: none; }
 .authors { font-size: 14px; color: var(--ink-2); }
 .venue { font-family: var(--serif); font-style: italic; font-size: 15px; color: var(--ink); margin-top: 4px; }
-.venue-inline { font-family: var(--serif); font-style: italic; font-size: 15px; color: var(--ink); }
+.venue-inline { font-family: var(--serif); font-style: italic; font-size: 15px; color: var(--ink-2); }
 .award { display: inline-block; margin-top: 10px; font-size: 13px; font-weight: 500; color: var(--accent); background: var(--accent-soft); padding: 3px 10px; border-radius: 3px; }
 .media { font-size: 14px; color: var(--ink-2); margin-top: 8px; }
 .tags .when { color: var(--ink-3); }

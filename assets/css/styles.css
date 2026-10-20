@@ -158,7 +158,7 @@ nav a:hover { color: var(--ink); text-decoration: none; }
   100% { background: transparent; box-shadow: 0 0 0 16px transparent; }
 }
 @media (prefers-reduced-motion: reduce) { .paper:target { animation: none; } }
-.subhead { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin: 36px 0 0; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.subhead { font-family: var(--sans); font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); margin: 36px 0 0; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
 .paper-fig {
   display: block;
   background: var(--fig-bg);
